@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnisterne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav-container">
+            <div class="hamburger-menu"><i class="fas fa-bars"></i></div>
+            <ul>
+                <li id="brand"><a href="index.html">Gnist</a></li>
+                <li><a href="https://www.facebook.com/atoposatoposatopos"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/atopos_atopos"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/atoposdk/?viewAsMember=true"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="contact.htm">Om os</a></li>
+                <li><a class="active" href="vision.htm">Vision</a></li>
+                <li><a href="calendar.htm">Coming up</a></li>
+                <li><a href="stories.htm">Stories</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-border"></div>
+
+        <div class="medium-container">
+            <h1 style="text-align: center">
+                Forskellige ståsteder,
+                fælles blik
+            </h1>
+            <h2 style="text-align: center">
+                Vores vision er at skabe bæredygtig forandring og udvikling
+                gennem tværfaglige processer.
+            </h2>
+
+            <h3 style="text-align: center">
+                Vi har særligt fokus på forbindelser mellem
+                kunst & viden samt kultur & erhvervsliv.
+            </h3>
+        </div>
+        <center>
+            <div style="text-align: center;">
+                <img src="https://unsplash.com/photos/_dVxl4eE1rk/download?force=true&w=640" alt="Kunst og viden" style="max-width: 100%; height: auto;">
+            </div>
+        </center>
+
+    </div>
+    <div class="footer">Gnist ◦ CVR 4347 1198 ◦ Oplevelser og samarbejde</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navContainer = document.querySelector('.nav-container');
+
+            hamburgerMenu.addEventListener('click', function () {
+                navContainer.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.team-section {
+	text-align: center;
+	padding: 50px 0;
+}
+
+	.team-section .member {
+		margin-bottom: 30px;
+	}
+
+		.team-section .member img {
+			max-width: 100%;
+			border-radius: 50%;
+			height: 250px;
+		}
+
+		.team-section .member h3 {
+			margin-top: 15px;
+			font-size: 20px;
+		}
+
+		.team-section .member p {
+			margin: 0;
+			font-size: 16px;
+		}
+
+		.team-section .member .contact-info {
+			margin-top: 10px;
+		}
