@@ -88,7 +88,7 @@ li a:hover:not(.active) {
 .word {
     display: inline-block;
     min-width: 100%;
-    animation: scrollText 10s steps(2) infinite;
+    animation: scrollText 30s infinite;
     opacity: 1;
 }
 
@@ -225,32 +225,64 @@ li a:hover:not(.active) {
 
 .logo-container img {
     height: auto;
+
 }
 
     #hofor {
         max-width: 100px;
+        margin-right: 20px
+
     }
 
     #tietgen {
         max-width: 180px;
     }
 
-    #tec {
-        max-width: 150px;
-    }
+#tec {
+    max-width: 150px;
+}
+.text-left {
+    text-align: left;
+}
+.text-left-gray {
+    text-align: left;
+    color:gray;
+}
 
 .text-block {
     font: 14px Verdana, sans-serif;
     text-align: center;
 }
+.image-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image-cell {
+    width: 250px;
+    height: 250px;
+/*    border: 1px solid #ddd;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .image-cell img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+</style >
 
 div.footer {
-    position:relative;
+    position: relative;
     vertical-align: bottom;
     text-align: center;
     text-decoration: none;
     color: darkgray;
     padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div.footer a:link {
@@ -270,6 +302,32 @@ div.footer a:active {
     text-decoration: none;
 }
 
+.textlink {
+    position: relative;
+    vertical-align: bottom;
+    text-align: left;
+    text-decoration: none;
+    color: darkgray;
+    padding: 10px;
+}
+
+    .textlink a:link {
+        color: darkgray;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .textlink a:hover {
+        color: black;
+        background-color: transparent;
+    }
+
+    .textlink a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -280,7 +338,7 @@ div.footer a:active {
     top: 10px;
 }
 
-/* Mobile Styles */
+/* Media query for tablets */
 @media screen and (max-width: 768px) {
     .nav-container {
         padding: 40px 15px;
@@ -292,6 +350,7 @@ div.footer a:active {
             align-items: flex-start;
             padding-left: 0;
             width: 100%;
+            margin-top:15px;
         }
 
         .nav-container.open ul {
@@ -312,21 +371,56 @@ div.footer a:active {
     li a {
         text-align: left;
         padding: 14px;
-
     }
+
     .movingtext-container {
         overflow: hidden;
         white-space: nowrap;
         position: relative;
         width: 100%;
         margin: 0 auto;
-     /*   text-align: center;*/
+        /*   text-align: center;*/
         font: 50px Garamond, serif;
     }
+
     .row1 .column {
         flex: 1 1 100%; /* Flex-grow, flex-shrink, flex-basis */
         padding: 10px;
         box-sizing: border-box;
     }
 
+    .image-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .logo-container img {
+            height: auto;
+            margin: 10px 0;
+        }
+
+    #hofor {
+        max-width: 100px;
+        margin-left: 12px;
+    }
+
+    #tietgen {
+        max-width: 180px;
+    }
+
+    #tec {
+        max-width: 150px;
+    }
+}
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .image-table {
+        grid-template-columns: 1fr;
+    }
 }
