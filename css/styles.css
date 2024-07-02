@@ -212,9 +212,10 @@ body, html {
 }
 
 .image-cell {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
 /*    border: 1px solid #ddd;*/
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,8 +283,14 @@ div.footer a:active {
 
 /* Media query for tablets */
 @media screen and (max-width: 768px) {
-
-
+    .container {
+        padding: 0 30px;
+        background-color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .text-left {
+        font-size: 23px;
+    }
     .movingtext-container {
         overflow: hidden;
         white-space: nowrap;

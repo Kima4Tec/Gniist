@@ -4,3 +4,4 @@ Ved mobiltlf – vis hover text
 Gnistlogo som homeside
 Mathias – navneafklaring
 Flow i gnist moving text + logo?
+DTU link skal gøres mindre ved mobil visning
