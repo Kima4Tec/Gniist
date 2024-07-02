@@ -1,0 +1,105 @@
+
+.nav-container {
+    padding: 0 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative; /* Ensure positioning context for absolute children */
+}
+
+.brand-and-social {
+    display: flex;
+    align-items: center;
+}
+
+#brand {
+    font: bold 18px Verdana, sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-links li {
+        font: 16px Verdana, sans-serif;
+    }
+
+        .nav-links li a {
+            display: block;
+            color: gray;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            .nav-links li a:hover:not(.active) {
+                color: #111;
+            }
+
+.active {
+    color: #9639ff;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        padding: 20px 15px; /* Adjusted padding for smaller screens */
+    }
+
+        .nav-container.open .nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #fff; /* Optional background color */
+            width: 100%; /* Full width for the dropdown */
+            position: absolute;
+            top: 70px; /* Adjust based on your header height */
+            left: 0;
+            z-index: 1000; /* Ensure dropdown is on top */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none; /* Hide main navigation initially */
+    }
+
+        .nav-links li {
+            float: none; /* Reset float */
+            width: 100%; /* Full width for dropdown items */
+            text-align: left; /* Align text to left */
+        }
+}

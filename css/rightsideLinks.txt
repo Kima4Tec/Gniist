@@ -16,7 +16,71 @@ body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.nav-container {
+    padding: 0 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.brand-and-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+#brand {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: inherit; 
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+/*.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}*/
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
 
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+    }
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
 .medium-container {
     padding: 0 75px;
     background-color: #fff;
@@ -25,7 +89,50 @@ body, html {
     max-width: 600px;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
 
+li {
+    font: 16px Verdana, sans-serif;
+    float: right;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: gray;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: #111;
+}
+
+.active {
+    color: #9639ff;
+    font-weight: bold;
+}
+
+#brand {
+    float: left;
+    font: bold 18px Verdana, sans-serif;
+    color: #000;
+}
+
+.navbar-border {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
 
 .movingtext-container {
     overflow: hidden;
@@ -225,6 +332,8 @@ body, html {
         max-height: 100%;
     }
 
+</style >
+
 div.footer {
     position: relative;
     vertical-align: bottom;
@@ -282,7 +391,31 @@ div.footer a:active {
 
 /* Media query for tablets */
 @media screen and (max-width: 768px) {
+    .nav-container {
+        padding: 40px 15px;
+    }
 
+        .nav-container ul {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 0;
+            width: 100%;
+            margin-top:15px;
+        }
+
+        .nav-container.open ul {
+            display: flex;
+        }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    li a {
+        text-align: left;
+        padding: 14px;
+    }
 
     .movingtext-container {
         overflow: hidden;
@@ -298,9 +431,6 @@ div.footer a:active {
         flex: 1 1 100%; /* Flex-grow, flex-shrink, flex-basis */
         padding: 10px;
         box-sizing: border-box;
-    }
-    .row4 h1 {;
-        font-size:20px;
     }
 
     .image-table {
@@ -321,20 +451,31 @@ div.footer a:active {
 
     #hofor {
         max-width: 100px;
-        margin-left: 48px;
+        margin-left: 12px;
     }
 
     #tietgen {
         max-width: 180px;
-        margin-left: 30px;
     }
 
     #tec {
         max-width: 150px;
-        margin-left: 28px;
     }
-}
+    /*.nav-links {
+        display: none;*/ /* Skjuler menuen for mobile enheder, den kan vises via JavaScript når hamburger-menuen klikkes */
+        /*flex-direction: column;
+        position: absolute;
+        top: 50px;*/ /* Juster top-positionen efter behov */
+        /*right: 10px;
+        background-color: #fff;*/ /* Baggrundsfarve, juster efter behov */
+        /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/ /* Skygge for dropdown-menuen */
+        /*width: 200px;*/ /* Juster bredden efter behov */
+    /*}
 
+        .nav-links li {
+            margin: 10px 0;*/ /* Juster afstanden mellem menupunkterne efter behov */
+        /*}*/
+}
 /* Media query for mobile phones */
 @media (max-width: 480px) {
     .image-table {
