@@ -110,7 +110,7 @@ body, html {
     left: 0;
     right: 0;
     height: 100%;
-    width: 90%;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #9639ff;
@@ -287,6 +287,21 @@ div.footer a:active {
         padding: 0 30px;
         background-color: #fff;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .image-container .overlay {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: #9639ff;
+        color: #fff;
+        font: 14px Verdana, sans-serif;
+        padding: 20px 20px 20px 20px;
     }
     .text-left {
         font-size: 23px;
