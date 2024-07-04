@@ -16,6 +16,28 @@ body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgray;
+    background-color: transparent;
+}
+
+a:active {
+    color: darkgray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9639ff;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 .medium-container {
     padding: 0 75px;
@@ -48,12 +70,15 @@ body, html {
     0%, 16.666% {
         transform: translateX(0);
     }
+
     33.333%, 50% {
         transform: translateX(-100%);
     }
+
     66.666%, 83.333% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(-200%);
     }
@@ -96,36 +121,36 @@ body, html {
     overflow: hidden;
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: opacity 0.3s ease;
-}
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: opacity 0.3s ease;
+    }
 
-.image-container .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #9639ff;
-    color:#fff;
-    font: 14px Verdana, sans-serif;
-    padding: 20px 20px 20px 20px;
-}
+    .image-container .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #9639ff;
+        color: #fff;
+        font: 14px Verdana, sans-serif;
+        padding: 20px 20px 20px 20px;
+    }
 
-.image-container:hover img {
-    opacity: 0;
-}
+    .image-container:hover img {
+        opacity: 0;
+    }
 
-.image-container:hover .overlay {
-    opacity: 1;
-}
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
 
 .row2 .text-block {
     flex: 1;
@@ -147,26 +172,26 @@ body, html {
     text-align: center;
 }
 
-.row4 h1 {
-    margin: 30px auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-}
+    .row4 h1 {
+        margin: 30px auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+    }
 
-.row4 .info-block {
-    margin-bottom: 10px;
-    background-color: #fff;
-    padding: 10px;
-    width: 100%;
-}
+    .row4 .info-block {
+        margin-bottom: 10px;
+        background-color: #fff;
+        padding: 10px;
+        width: 100%;
+    }
 
-.row4 .text-field {
-    margin-bottom: 10px;
-}
+    .row4 .text-field {
+        margin-bottom: 10px;
+    }
 
-.row4 .text-field label {
-    margin-right: 10px;
-}
+        .row4 .text-field label {
+            margin-right: 10px;
+        }
 
 .logo-container {
     display: flex;
@@ -175,55 +200,61 @@ body, html {
     justify-content: center;
 }
 
-.logo-container img {
-    height: auto;
+    .logo-container img {
+        height: auto;
+    }
 
+#hofor {
+    max-width: 100px;
+    margin-right: 20px
 }
 
-    #hofor {
-        max-width: 100px;
-        margin-right: 20px
-
-    }
-
-    #tietgen {
-        max-width: 180px;
-    }
+#tietgen {
+    max-width: 180px;
+}
 
 #tec {
     max-width: 150px;
 }
+
 .text-left {
     text-align: left;
 }
+
 .text-left-gray {
     text-align: left;
-    color:gray;
+    color: gray;
 }
 
 .text-block {
     font: 14px Verdana, sans-serif;
     text-align: center;
 }
+
+/*support logo in stories.htm*/
+
+.text-logo {
+    text-align: center;
+}
+
 .image-table {
+    /*    border: 1px solid #ddd;*/
+    margin: 50px auto 0px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
 .image-cell {
-    max-width: 250px;
-    max-height: 250px;
-/*    border: 1px solid #ddd;*/
-    padding: 10px;
+    /*border: 1px solid #ddd;*/
+    padding: 15px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
 }
 
     .image-cell img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 200px;
+        max-height: 100px;
     }
 
 div.footer {
@@ -233,25 +264,25 @@ div.footer {
     text-decoration: none;
     color: darkgray;
     padding: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-div.footer a:link {
-    color: darkgray;
-    background-color: transparent;
-    text-decoration: none;
-}
+    div.footer a:link {
+        color: darkgray;
+        background-color: transparent;
+        text-decoration: none;
+    }
 
-div.footer a:hover {
-    color: black;
-    background-color: transparent;
-}
+    div.footer a:hover {
+        color: black;
+        background-color: transparent;
+    }
 
-div.footer a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
+    div.footer a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
 
 .textlink {
     position: relative;
@@ -262,7 +293,7 @@ div.footer a:active {
     padding: 10px;
 }
 
-    .textlink a:link {
+/*    .textlink a:link {
         color: darkgray;
         background-color: transparent;
         text-decoration: none;
@@ -278,6 +309,17 @@ div.footer a:active {
         background-color: transparent;
         text-decoration: none;
     }
+    .textlink a:visited {
+        color: #9639ff;
+        background-color: transparent;
+        text-decoration: none;
+    }*/
+
+
+.atopos-text {
+    margin-top: 20px;
+    width: 60%
+}
 
 
 
@@ -288,6 +330,7 @@ div.footer a:active {
         background-color: #fff;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
     .image-container .overlay {
         position: relative;
         top: 0;
@@ -303,12 +346,15 @@ div.footer a:active {
         font: 14px Verdana, sans-serif;
         padding: 20px 20px 20px 20px;
     }
+
     .image-container:hover img {
         opacity: 1;
     }
+
     .text-left {
         font-size: 23px;
     }
+
     .movingtext-container {
         overflow: hidden;
         white-space: nowrap;
@@ -324,8 +370,10 @@ div.footer a:active {
         padding: 10px;
         box-sizing: border-box;
     }
-    .row4 h1 {;
-        font-size:20px;
+
+    .row4 h1 {
+        ;
+        font-size: 20px;
     }
 
     .image-table {
@@ -357,6 +405,11 @@ div.footer a:active {
     #tec {
         max-width: 150px;
         margin-left: 28px;
+    }
+
+    .atopos-text {
+        margin-top: 20px;
+        width: 100%
     }
 }
 
